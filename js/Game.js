@@ -22,6 +22,13 @@
     return phrases;
     };
 
-
+    /**
+  * Selects random phrase from phrases property
+  * @return {Object} Phrase object chosen to be used
+  */
+  getRandomPhrase() {
+    const randomPhrase = Math.floor(Math.random() * 5);
+    return this.phrases[randomPhrase];
+  };
 
  }
