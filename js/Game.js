@@ -14,8 +14,9 @@
   * @return {array} An array of phrases that could be used in the game
   */
   createPhrases() {
-  const phrases = [];
-  return phrases;
-      };
+    const phrases = [new Phrase('Phrase one'),
+                     new Phrase('phrase two')];
+    return phrases;
+    };
 
  }
