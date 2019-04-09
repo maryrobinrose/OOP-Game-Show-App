@@ -14,11 +14,11 @@
   * @return {array} An array of phrases that could be used in the game
   */
   createPhrases() {
-    const phrases = [new Phrase('phrase one'),
-                     new Phrase('phrase two'),
-                     new Phrase('phrase three'),
-                     new Phrase('phrase four'),
-                     new Phrase('phrase five')];
+    const phrases = [new Phrase('Can I Steal You for a Second'),
+                     new Phrase('She Isnt Here For the Right Reasons'),
+                     new Phrase('Im Not Here to Make Friends'),
+                     new Phrase('Will You Accept This Rose'),
+                     new Phrase('This Is My Last Chance to Find Love')];
     return phrases;
     };
 
