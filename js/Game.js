@@ -18,7 +18,7 @@
                      new Phrase('She Isnt Here For the Right Reasons'),
                      new Phrase('Im Not Here to Make Friends'),
                      new Phrase('Will You Accept This Rose'),
-                     new Phrase('This Is My Last Chance to Find Love')];
+                     new Phrase('I Have So Many Emotions')];
     return phrases;
     };
 
