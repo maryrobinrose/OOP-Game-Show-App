@@ -30,14 +30,13 @@
    */
    checkLetter(letter) {
      //Loop through letters in the phrase
-     for (let i = 0; i < phrase.length; i += 1) {
-       //If selected letter matches letter in the phrase
-       if (this.phrase[i] === letter) {
+     for (let i = 0; i < this.phrase.length; i += 1) {
+     //If selected letter matches letter in the phrase
+     if (this.phrase[i] === letter) {
          return true;
-       } else {
-         return false;
        }
      }
+      return false;
    };
 
    /**

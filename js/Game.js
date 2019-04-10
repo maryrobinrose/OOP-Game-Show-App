@@ -91,8 +91,23 @@
 */
 
 //This method displays the original start screen overlay, and depending on the outcome of the game, updates the overlay `h1` element with a friendly win or loss message, and replaces the overlay’s `start` CSS class with either the `win` or `lose` CSS class.
-gameOver(gameWon) {
+  gameOver(gameWon) {
+    //Select overlay
+    const overlay = document.querySelector('#overlay');
+    //Select game over message
+    const message = document.querySelector('#game-over-message');
+    //If game is won
+    if (gameWon) {
+      overlay.style.display = '';
+      message.textContent = 'You won!';
+      overlay.className = 'win';
+    } else {
+      overlay.style.display = '';
+      message.textContent = 'You lose!';
+      overlay.className = 'lose'
+;    }
 
-};
 
- }
+  };
+
+}
