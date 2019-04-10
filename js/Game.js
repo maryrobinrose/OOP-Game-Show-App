@@ -35,12 +35,13 @@
   * Begins game by selecting a random phrase and displaying it to user
   */
   startGame() {
-    //hide div` element with an `id` of `overlay`
-    //call `getRandomPhrase()` method to select a Phrase object from the Game object’s array of phrases
-    //adds the phrase to the gameboard by calling the `addPhraseToDisplay()` method (which is a method on the Phrase class) on the selected Phrase object
-    //store selected phrase n the Game’s `activePhrase` property
-
-
+    //Hide initial overlay
+    const overlay = document.querySelector('#overlay');
+    overlay.style.display = 'none';
+    //Select a Phrase object from the list of phrases
+    this.activePhrase = this.getRandomPhrase();
+    //Add phrase to the gameboard
+    this.activePhrase.addPhraseToDisplay();
   };
 
  }
