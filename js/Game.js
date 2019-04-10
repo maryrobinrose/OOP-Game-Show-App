@@ -54,4 +54,35 @@ the phrase or if the game is lost because the player is out of lives.
 ● If the game is won or lost, a message should be displayed on screen.*/
   }
 
+  /**
+  * Checks for winning move
+  * @return {boolean} True if game has been won, false if game wasn't
+  won
+  */
+  //This method checks to see if the player has revealed all of the letters in the active phrase.
+  checkForWin() {
+
+  };
+
+  /**
+  * Increases the value of the missed property
+  * Removes a life from the scoreboard
+  * Checks if player has remaining lives and ends game if player is out
+  */
+
+  //This method removes a life from the scoreboard, by replacing one of the `liveHeart.png` images with a `lostHeart.png` image (found in the `images` folder) and increments the `missed` property. If the player has five missed guesses (i.e they're out of lives), then end the game by calling the `gameOver()` method.
+  removeLife() {
+
+  };
+
+  /**
+* Displays game over message
+* @param {boolean} gameWon - Whether or not the user won the game
+*/
+
+//This method displays the original start screen overlay, and depending on the outcome of the game, updates the overlay `h1` element with a friendly win or loss message, and replaces the overlay’s `start` CSS class with either the `win` or `lose` CSS class.
+gameOver(gameWon) {
+
+};
+
  }
