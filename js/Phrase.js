@@ -29,8 +29,9 @@
    * @param (string) letter - Letter to check
    */
    checkLetter(letter) {
-     //loop through letters in the phrase
+     //Loop through letters in the phrase
      for (let i = 0; i < phrase.length; i += 1) {
+       //If selected letter matches letter in the phrase
        if (this.phrase[i] === letter) {
          return true;
        } else {
@@ -43,9 +44,17 @@
    * Displays passed letter on screen after a match is found
    * @param (string) letter - Letter to display
    */
-   //Reveals the letter(s) on the board that matches the player's selection. To reveal the matching letter(s), select all of the letter DOM elements that have a CSS class name that matches the selected letter and replace each selected element's `hide` CSS class with the `show` CSS class.
    showMatchedLetter(letter) {
-
+     //Select letters in phrases
+      const matchedLetters = document.querySelectorAll('ul li');
+      //Loop over letters
+      for (let i = 0; i < matchedLetters.length; i += 1) {
+        //If a letter in the list matches a selected letter
+        if (matchedLetters[i] === letter) {
+          matchedLetters[i].classList.add('show');
+          matchedLetters[i].classList.remove('hide');
+        }
+      }
    };
 
   }
