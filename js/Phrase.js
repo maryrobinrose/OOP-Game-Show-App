@@ -28,10 +28,14 @@
    * Checks if passed letter is in phrase
    * @param (string) letter - Letter to check
    */
-   //Checks to see if the letter selected by the player matches a letter in the phrase.
    checkLetter(letter) {
-     if () {
-
+     //loop through letters in the phrase
+     for (let i = 0; i < phrase.length; i += 1) {
+       if (this.phrase[i] === letter) {
+         return true;
+       } else {
+         return false;
+       }
      }
    };
 

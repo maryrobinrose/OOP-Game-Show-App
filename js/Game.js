@@ -44,15 +44,13 @@
     this.activePhrase.addPhraseToDisplay();
   };
 
-  handleInteraction() {
-    /*The clicked/chosen letter must be captured.
-● The clicked letter must be checked against the phrase for a match.
-● If there’s a match, the letter must be displayed on screen instead of the placeholder.
-● If there’s no match, the game must remove a life from the scoreboard.
-● The game should check if the player has won the game by revealing all of the letters in
-the phrase or if the game is lost because the player is out of lives.
-● If the game is won or lost, a message should be displayed on screen.*/
-  }
+  /**
+* Handles onscreen keyboard button clicks
+* @param (HTMLButtonElement) button - The clicked button element
+*/
+handleInteraction(button) {
+console.log(button);
+};
 
   /**
   * Checks for winning move
