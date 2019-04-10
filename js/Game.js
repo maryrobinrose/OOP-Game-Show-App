@@ -73,10 +73,16 @@
   * Removes a life from the scoreboard
   * Checks if player has remaining lives and ends game if player is out
   */
-
-  //This method removes a life from the scoreboard, by replacing one of the `liveHeart.png` images with a `lostHeart.png` image (found in the `images` folder) and increments the `missed` property. If the player has five missed guesses (i.e they're out of lives), then end the game by calling the `gameOver()` method.
   removeLife() {
-
+    //Select hearts
+    const lives = document.querySelectorAll('.tries img');
+    //Use missed property to add a lost heart
+    this.missed += 1;
+    heart.src = 'images/lostHeart.png';
+    //If five tries are missed, game ends
+    if (this.missed === 5) {
+      this.gameOver();
+    }
   };
 
   /**
