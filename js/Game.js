@@ -45,21 +45,27 @@
   };
 
   /**
-* Handles onscreen keyboard button clicks
-* @param (HTMLButtonElement) button - The clicked button element
-*/
-handleInteraction(button) {
-console.log(button);
-};
+  * Handles onscreen keyboard button clicks
+  * @param (HTMLButtonElement) button - The clicked button element
+  */
+  handleInteraction(button) {
+    console.log(button);
+  };
 
   /**
   * Checks for winning move
   * @return {boolean} True if game has been won, false if game wasn't
   won
   */
-  //This method checks to see if the player has revealed all of the letters in the active phrase.
   checkForWin() {
-
+    //Select letters that are not matched
+    const notMatched = document.getElementByClassName('hide');
+      //If there are no unmatched letters
+      if (notMatched.length === 0) {
+        return true;
+      } else {
+        return false;
+      }
   };
 
   /**
