@@ -59,8 +59,8 @@
     } else if (this.activePhrase.checkLetter(button.innerHTML) === true) {
       button.classList.add('chosen');
       this.activePhrase.showMatchedLetter(button.innerHTML);
-      if (this.checkForWin === true) {
-        this.gameOver(true);
+        if (this.checkForWin() === true) {
+          this.gameOver(true);
       }
     }
   };
