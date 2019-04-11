@@ -59,7 +59,7 @@
   */
   checkForWin() {
     //Select letters that are not matched
-    const notMatched = document.getElementByClassName('hide');
+    const notMatched = document.getElementsByClassName('hide');
       //If there are no unmatched letters
       if (notMatched.length === 0) {
         return true;

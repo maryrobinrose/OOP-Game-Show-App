@@ -12,9 +12,11 @@
    */
    addPhraseToDisplay() {
      const phrase = this.phrase;
+     //Select the phrases ul
      const phraseList = document.querySelector('#phrase ul');
      for (let i = 0; i < phrase.length; i += 1) {
        let li = document.createElement('li');
+       //If the the li isn't a space
        if (phrase[i] !== ' ') {
          li.className = `hide letter ${phrase[i]}`;
        } else {
@@ -45,14 +47,14 @@
    */
    showMatchedLetter(letter) {
      //Select letters in phrase
-      const matchedLetters = document.querySelectorAll('ul li');
+      let matchedLetters = document.querySelectorAll('ul li');
       //Loop over letters
       for (let i = 0; i < matchedLetters.length; i += 1) {
         //If a letter in the list matches a selected letter
         if (matchedLetters[i].textContent === letter) {
           //Show letter
-          matchedLetters[i].classList.add('show');
           matchedLetters[i].classList.remove('hide');
+          matchedLetters[i].classList.add('show');
         }
       }
    };
