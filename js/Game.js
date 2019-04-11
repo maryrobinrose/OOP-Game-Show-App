@@ -49,7 +49,20 @@
   * @param (HTMLButtonElement) button - The clicked button element
   */
   handleInteraction(button) {
-    console.log(button);
+    //Disable the selected letter’s onscreen keyboard button
+    button.setAttribute('disabled', 'disabled');
+    //If the phrase does not include the guessed letter, remove life
+    if (this.activePhrase.checkLetter(button.innerHTML) === false) {
+      button.classList.add('wrong');
+      this.removeLife();
+      //If the phrase does include the gussed letter
+    } else if (this.activePhrase.checkLetter(button.innerHTML) === true) {
+      button.classList.add('chosen');
+      this.activePhrase.showMatchedLetter(button.innerHTML);
+      if (this.checkForWin === true) {
+        this.gameOver(true);
+      }
+    }
   };
 
   /**
