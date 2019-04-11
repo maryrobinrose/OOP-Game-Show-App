@@ -15,7 +15,7 @@
      const phraseList = document.querySelector('#phrase ul');
      for (let i = 0; i < phrase.length; i += 1) {
        let li = document.createElement('li');
-       if (phrase[i] !== '') {
+       if (phrase[i] !== ' ') {
          li.className = `hide letter ${phrase[i]}`;
        } else {
          li.className = 'space';
