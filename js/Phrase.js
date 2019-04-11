@@ -44,16 +44,19 @@
    * @param (string) letter - Letter to display
    */
    showMatchedLetter(letter) {
-     //Select letters in phrases
+     //Select letters in phrase
       const matchedLetters = document.querySelectorAll('ul li');
       //Loop over letters
       for (let i = 0; i < matchedLetters.length; i += 1) {
         //If a letter in the list matches a selected letter
-        if (matchedLetters[i] === letter) {
+        if (matchedLetters[i].textContent === letter) {
+          //Show letter
           matchedLetters[i].classList.add('show');
           matchedLetters[i].classList.remove('hide');
         }
       }
    };
+
+
 
   }
