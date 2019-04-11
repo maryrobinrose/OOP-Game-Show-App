@@ -119,7 +119,7 @@
     }
 
     this.resetGame();
-    
+
   };
 
   /**
@@ -145,8 +145,5 @@
     for (let i = 0; i < lives.length; i += 1) {
       lives[i].src = 'images/liveHeart.png';
     }
-
   };
-
-
 }
