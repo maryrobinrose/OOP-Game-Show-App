@@ -74,11 +74,11 @@
   * Checks if player has remaining lives and ends game if player is out
   */
   removeLife() {
-    //Select hearts
-    const lives = document.querySelectorAll('.tries img');
+    //Select live hearts
+    const lives = document.querySelector("img[src='images/liveHeart.png']");
     //Use missed property to add a lost heart
     this.missed += 1;
-    heart.src = 'images/lostHeart.png';
+    lives.src = 'images/lostHeart.png';
     //If five tries are missed, game ends
     if (this.missed === 5) {
       this.gameOver();
