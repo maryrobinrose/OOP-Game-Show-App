@@ -118,6 +118,8 @@
       overlay.className = 'lose';
     }
 
+    this.resetGame();
+    
   };
 
   /**
@@ -129,18 +131,19 @@
     let removeLi = document.querySelectorAll('ul li');
     for (let i = 0; i < removeLi.length; i += 1) {
         removeLi[i].remove();
-      }
-    //Enable keyboard buttons
-    let letters = document.querySelectorAll('button');
-    for (i = 0; i < letters.length; i += 1) {
-      letters[i].className = 'key';
-      letters[i].removeAttribute('disabled');
     }
 
-    //Resets hearts
-    let hearts = document.querySelectorAll('.tries img');
-    for (i = 0; i < hearts.length; i += 1) {
-      hearts[i].src = 'images/liveHeart.png';
+    //Enable keyboard buttons
+    let letters = document.querySelectorAll('.key');
+    for (let i = 0; i < letters.length; i += 1) {
+      letters[i].removeAttribute('disabled');
+      letters[i].classList.remove('wrong', 'chosen');
+    }
+
+    //Reset lives
+    let lives = document.querySelectorAll('.tries img');
+    for (let i = 0; i < lives.length; i += 1) {
+      lives[i].src = 'images/liveHeart.png';
     }
 
   };
