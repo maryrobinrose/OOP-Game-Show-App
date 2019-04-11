@@ -19,6 +19,7 @@
        //If the the li isn't a space
        if (phrase[i] !== ' ') {
          li.className = `hide letter ${phrase[i]}`;
+         li.textContent = phrase[i];
        } else {
          li.className = 'space';
        }
