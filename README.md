@@ -4,9 +4,13 @@
 
 #### By **Mary Robin Rose**
 
+## Live Link
+
+https://maryrobinrose.github.io/OOP-Game-Show-App
+
 ## Description
 
-_This project is a browser-based word guessing game using OOP. _
+_This project is a browser-based word guessing game using OOP._
 
 ## Setup And Installation
 
